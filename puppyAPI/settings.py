@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    # just a little convention thing: it's a little better if you put the locally-defined apps
+    # at the bottom of the list.  That makes it easier to determine where the apps are coming from.
+    'django_extensions',
     'api',
-    'django_extensions'
 ]
 
 MIDDLEWARE = [
